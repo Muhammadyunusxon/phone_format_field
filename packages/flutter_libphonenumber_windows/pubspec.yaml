@@ -1,0 +1,28 @@
+name: flutter_libphonenumber_windows
+description: Windows implementation of the flutter_libphonenumber plugin.
+version: 1.0.0
+repository: https://github.com/acoutts/flutter_libphonenumber/tree/main/packages/flutter_libphonenumber_windows
+issue_tracker: https://github.com/acoutts/flutter_libphonenumber/issues
+
+environment:
+  sdk: ^3.9.2
+  flutter: ">=3.0.0"
+
+resolution: workspace
+
+flutter:
+  plugin:
+    implements: flutter_libphonenumber
+    platforms:
+      windows:
+        dartPluginClass: FlutterLibphonenumberWindows
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_libphonenumber_platform_interface: ^2.1.0
+  dlibphonenumber: ^1.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
