@@ -38,14 +38,14 @@ class FlutterLibphonenumberWindows extends FlutterLibphonenumberPlatform {
     final regions = util.supportedRegions;
     for (final region in regions) {
       final exampleNumberMobile = util.getExampleNumberForType(
-            region,
-            phoneutil.PhoneNumberType.mobile,
+            regionCode: region,
+            type: phoneutil.PhoneNumberType.mobile,
           ) ??
           phoneutil.PhoneNumber();
 
       final exampleNumberFixedLine = util.getExampleNumberForType(
-            region,
-            phoneutil.PhoneNumberType.fixedLine,
+            regionCode: region,
+            type: phoneutil.PhoneNumberType.fixedLine,
           ) ??
           phoneutil.PhoneNumber();
 
